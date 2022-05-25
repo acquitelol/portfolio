@@ -219,12 +219,14 @@ body {
 
 
 }
-.logo:hover {
+.logo:hover,
+.logo:focus {
   /* animation: theReverseRotate ease-in 1s; */
   transform: translateX(-0.5em);
 }
 
-.logo:hover::after {
+.logo:hover::after,
+.logo:focus::after {
   transition: transform 300ms ease;
   animation: sheen 0.3s ease forwards;
 }

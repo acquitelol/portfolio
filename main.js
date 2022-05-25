@@ -8,7 +8,7 @@ $('.menu-toggle').click(function() {
 
 // the fucking version load
 window.addEventListener('load', () => {
-  let version = '1.2.7';
+  let version = '1.2.8';
   let versionFooter = document.querySelector('.copyright');
   versionFooter.innerText = `[Version ${version}] ${versionFooter.innerText}`
 })
