@@ -8,9 +8,10 @@ $('.menu-toggle').click(function() {
 
 // the fucking version load
 window.addEventListener('load', () => {
-  let version = '1.2.8';
+  let version = '1.2.9';
   let versionFooter = document.querySelector('.copyright');
   versionFooter.innerText = `[Version ${version}] ${versionFooter.innerText}`
+  $('head').append('<style class="styling"></style>');
 })
 
 
@@ -169,4 +170,19 @@ const projForward = () => {
     //   text3.style.animation = 'theReverseRotate ease-in 1s';
     // });
 
+let logo = document.querySelector('.logo');
 
+logo.addEventListener('click', () => {
+})
+
+document.addEventListener('click', (e) => {   
+  if (logo.contains(e.target)){
+
+    $('.styling').innerHTML = '.logo {transform: translateX(-0.5em) !important; } .logo::after {transition: transform 300ms ease !important; animation: sheen 0.3s ease forwards !important; }'
+    
+  } else{
+    
+    $('.styling').innerHTML = '.logo {transform: translateX(0) !important; } .logo::after {transition: transform 300ms ease !important; animation: sheen2 0.3s ease forwards !important; }'
+
+  }
+});
