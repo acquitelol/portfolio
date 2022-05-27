@@ -8,7 +8,7 @@ $('.menu-toggle').click(function() {
 
 // the fucking version load
 window.addEventListener('load', () => {
-  let version = '1.2.9';
+  let version = '1.3.0';
   let versionFooter = document.querySelector('.copyright');
   versionFooter.innerText = `[Version ${version}] ${versionFooter.innerText}`
   $('head').append('<style class="styling"></style>');
@@ -53,8 +53,6 @@ anime.timeline({loop: false})
     easing: "easeOutExpo",
     delay: (el, i) => 50 * i,
   });
-
-
 
 
 // BLACK MAGIC. DONT FUCKING TOUCH

@@ -105,7 +105,7 @@ body {
 }
 
 .bg {
-  background-image: url('https://acquite.netlify.app/assets/mesh.png');
+  background-image: url('assets/mesh.png');
   background-size: 1000vw;
   background-attachment: fixed;
   background-blend-mode: overlay;
